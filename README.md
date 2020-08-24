@@ -12,3 +12,6 @@ git rm --cached -r .
 git commit 
 
 ```
+
+#### Usefull gitignore templates
+`url` : <https://github.com/github/gitignore>
