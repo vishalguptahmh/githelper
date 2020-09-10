@@ -37,3 +37,32 @@ git merge branch_name
 
 #### Usefull gitignore templates
 `url` : <https://github.com/github/gitignore>
+
+#### ` Git Merge. You are in the middle of a merge. Cannot Amend.` or `You cannot merge there are conflicts`
+```
+      
+        /o-----o---o--o-----o--------- branch
+--o-o--A--o---o---o---o----o--o-o-o--- master
+When you rebase you can move it like this:
+
+                                   /o-----o---o--o-----o------ branch
+--o-o--A--o---o---o---o----o--o-o-o master
+```
+> ..
+```
+git rebase
+```
+> First, rewinding head to replay your work on top of it...
+
+> Applying: change name
+
+> Using index info to reconstruct a base tree...
+
+resolve conflicts
+
+```
+git rebase --continue
+
+```
+now you will see your branch is on top and problem is resolved.
+
