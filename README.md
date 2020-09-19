@@ -48,15 +48,15 @@ When you rebase you can move it like this:
                                    /o-----o---o--o-----o------ branch
 --o-o--A--o---o---o---o----o--o-o-o master
 ```
-> ..
+.
 ```
 git rebase
 ```
-> First, rewinding head to replay your work on top of it...
+First, rewinding head to replay your work on top of it...
 
-> Applying: change name
+Applying: change name
 
-> Using index info to reconstruct a base tree...
+Using index info to reconstruct a base tree...
 
 resolve conflicts
 
@@ -65,4 +65,16 @@ git rebase --continue
 
 ```
 now you will see your branch is on top and problem is resolved.
+
+
+#### Remove local untracked files from the current Git branch
+see which files will be deleted 
+```
+git clean -n
+```
+then remove files
+To remove directories, run `git clean -f -d` or `git clean -fd`
+To remove ignored files, run `git clean -f -X` or `git clean -fX`
+To remove ignored and non-ignored files, run `git clean -f -x` or `git clean -fx`
+
 
