@@ -93,4 +93,19 @@ apply patch
 git apply --whitespace=warn my.patch
 ```
 
+### STASH CHANGES
+it will stash untracked files also
+
+```git
+git stash save -u "change name"
+```
+stash list
+```
+git stash list
+```
+apply stash
+
+```
+git stash apply stash@{number}
+```
 
