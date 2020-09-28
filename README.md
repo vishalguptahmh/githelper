@@ -6,36 +6,36 @@
 git rm --cached -r .
 
 ```
-### want to add long message in commit type only below command
-
+### ADD LONG MESSAGES IN COMMIT 
+it will open default editor to type
 ```
 git commit 
 
 ```
 
-### create a new branch
+### CREATE A BRANCH
 ```
 git branch branch_name
 
 ```
-### switch to to other branch
+### SWITCH TO TO OTHER BRANCH
 ```
 git checkout branch_name
 ```
 
-### create a new branch and switch to other branch at same time 
+### CREATE A NEW BRANCH AND SWITCH TO OTHER BRANCH AT SAME TIME
 ```
 git checkout -b branch_name
 ```
 
-### merge some branch to master branch 
+### MERGE SOME BRANCH TO MASTER BRANCH 
 ```
 git checkout master
 git merge branch_name
 
 ```
 
-### Usefull gitignore templates
+### USEFULL GITIGNORE TEMPLATES
 `url` : <https://github.com/github/gitignore>
 
 #### ` Git Merge. You are in the middle of a merge. Cannot Amend.` or `You cannot merge there are conflicts`
@@ -69,7 +69,7 @@ now you will see your branch is on top and problem is resolved.
 
 
 
-### Remove local untracked files from the current Git branch
+### REMOVE LOCAL UNTRACKED FILES FROM THE CURRENT GIT BRANCH
 see which files will be deleted 
 ```
 git clean -n
