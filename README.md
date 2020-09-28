@@ -80,3 +80,17 @@ To remove ignored files, run `git clean -f -X` or `git clean -fX`
 To remove ignored and non-ignored files, run `git clean -f -x` or `git clean -fx`
 
 
+
+### CREATE AND APPLY PATCH
+```
+git diff > my.patch
+or 
+git diff {branch_name} > my.patch
+
+```
+apply patch
+```
+git apply --whitespace=warn my.patch
+```
+
+
