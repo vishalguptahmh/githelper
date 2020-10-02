@@ -1,5 +1,30 @@
 # git helper
 
+### ADDING GIT GLOBAL ITEMS
+```
+git config --global user.name "Vishal Gupta"
+git config --global user.email "EMAIL_ADDRESS"
+```
+### PUSHING EXISTING FOLDER TO GITHUB OR GITLAB
+```
+cd existing_folder
+git init
+git remote add origin REMOTE_URL
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+```
+
+### PUSHING EXISTING GIT REPO TO NEW GIT REPO
+```
+cd existing_repo
+git remote rename origin my_old_origin
+git remote add origin REMOTE_URL
+git push -u origin --all
+git push -u origin --tags
+
+```
+
 ### if you have added `git add .` from terminal by mistake and want them to move them back to uncommited state..
 
 ```
