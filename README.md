@@ -134,3 +134,41 @@ apply stash
 git stash apply stash@{number}
 ```
 
+### Merge Commits into single commit
+Lets assume we have two commits.. we need to merge them to one on branch "abc"
+commit 1 : intiall commit
+commit 2 : for review put commit
+
+We need to merge both into single
+```git
+git rebase -i HEAD~2
+```
+Now it will ask for pick and squash commit
+```git
+pick 01d1124 Initall commit message
+pick 6340aaa For Review put commit commit message
+
+# Rebase 60709da..30e0ccb onto 60709da
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+# However, if you remove everything, the rebase will be aborted.
+#
+```
+now we have to put squash which needs to merge 
+
+```git
+pick 01d1124 Initall commit message
+squash 6340aaa For Review put commit commit message
+
+```
+Now it will merge into single commit
+
+
