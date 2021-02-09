@@ -30,6 +30,10 @@ git push -u origin --tags
 ```
 git rm --cached -r .
 
+or 
+
+git reset HEAD^ -- path/to/file
+
 ```
 ### ADD LONG MESSAGES IN COMMIT 
 it will open default editor to type
