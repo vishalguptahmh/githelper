@@ -24,6 +24,10 @@ git push -u origin --all
 git push -u origin --tags
 
 ```
+### Revert back Modified File
+```git
+git restore <Filename>
+```
 
 ### if you have added `git add .` from terminal by mistake and want them to move them back to uncommited state..
 
