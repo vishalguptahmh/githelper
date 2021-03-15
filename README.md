@@ -83,7 +83,7 @@ When you rebase you can move it like this:
 ```
 .
 ```
-git rebase
+git rebase <branch_name>
 ```
 First, rewinding head to replay your work on top of it...
 
