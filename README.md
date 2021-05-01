@@ -67,6 +67,10 @@ git checkout master
 git merge branch_name
 
 ```
+### The “fatal: refusing to merge unrelated histories” Git error
+```
+git pull origin master --allow-unrelated-histories
+```
 
 ### USEFULL GITIGNORE TEMPLATES
 `url` : <https://github.com/github/gitignore>
