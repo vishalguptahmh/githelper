@@ -184,3 +184,26 @@ squash 6340aaa For Review put commit commit message
 Now it will merge into single commit
 
 
+### Alias in git
+you have to add this in .gitconfig file.
+there are two options to add these
+1) command line 
+- windows: `git config --global alias.ci "commit -v"`
+- Mac : `git config --global alias.ci 'commit -v'`
+
+2) opening file
+- windows : `C:\Users\ABC\.gitconfig`
+- mac : `~/.gitconfig`
+
+```
+
+[mergetool "vsdiffmerge"]
+	cmd = \"C:\\Program Files ......."
+[alias]
+	rdev = reset --hard origin/dev
+	pd = pull origin dev
+	ca = commit --amend
+	com = commit
+      cb = checkout -b
+      co = checkout
+```
