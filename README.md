@@ -204,6 +204,8 @@ there are two options to add these
 	pd = pull origin dev
 	ca = commit --amend
 	com = commit
-      cb = checkout -b
-      co = checkout
+      	cb = checkout -b
+      	co = checkout
+      	ui = !gitk --all
 ```
+Use: `git pd` or `git ui`
