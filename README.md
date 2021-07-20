@@ -4,6 +4,8 @@
 ```
 git config --global user.name "Vishal Gupta"
 git config --global user.email "EMAIL_ADDRESS"
+git config --global commit.template /Users/vishal.gupta/Documents/code/.gitmessage
+git config --global core.editor "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n -w" // for mac
 ```
 ### PUSHING EXISTING FOLDER TO GITHUB OR GITLAB
 ```
