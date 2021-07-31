@@ -211,3 +211,109 @@ there are two options to add these
       	ui = !gitk --all
 ```
 Use: `git pd` or `git ui`
+
+
+
+
+
+
+
+## Graph Examples 
+```mermaid
+   stateDiagram-v2
+        State1 : plain text message
+        block1 : plain text block 1
+        block2 : plain text block 2
+        block3 : plain text block 3
+
+        State1 --> block1
+        State1 --> block2
+        State1 --> block3
+    
+        enkey1: Encyption Key
+        enkey2: Encyption Key
+        enkey3: Encyption Key
+
+        encyptionAlgo : Encyption Algorithim
+        encyptionAlgo2 : Encyption Algorithim
+        encyptionAlgo3 : Encyption Algorithim
+
+
+        state block1 {
+            plaintext1 --> encyptionAlgo
+            enkey1 --> encyptionAlgo 
+            encyptionAlgo --> cipherBlock1
+        }
+
+        state block2 {
+            plaintext2 --> encyptionAlgo2
+            enkey2 --> encyptionAlgo2
+            encyptionAlgo2 --> cipherBlock2
+        }
+
+        state block3 {
+            plaintext3 --> encyptionAlgo3
+            enkey3 --> encyptionAlgo3
+            encyptionAlgo3 --> cipherBlock3
+        }
+
+        State2 : cipher message
+        block1 --> State2
+        block2 --> State2
+        block3 --> State2
+
+```
+
+```mermaid
+        stateDiagram-v2
+        State1 : plain text message
+        block1 : plain text block 1
+        block2 : plain text block 2
+        block3 : plain text block 3
+
+        State1 --> block1
+        State1 --> block2
+        State1 --> block3
+    
+        enkey1: Encyption Key
+        enkey2: Encyption Key
+        enkey3: Encyption Key
+
+        encyptionAlgo : Encyption Algorithim
+        encyptionAlgo2 : Encyption Algorithim
+        encyptionAlgo3 : Encyption Algorithim
+
+
+        state block1 {
+            plaintext1 --> xor
+            iv --> xor
+            xor --> encyptionAlgo
+            enkey1 --> encyptionAlgo 
+            encyptionAlgo --> cipherBlock1
+        }
+
+        state block2 {
+            plaintext2 --> xor1
+            block1 --> xor1
+            xor1 --> encyptionAlgo2
+            enkey2 --> encyptionAlgo2
+            encyptionAlgo2 --> cipherBlock2
+        }
+
+        state block3 {
+            plaintext3 --> xor2
+            block2 --> xor2
+            xor2 --> encyptionAlgo3
+            enkey3 --> encyptionAlgo3
+            encyptionAlgo3 --> cipherBlock3
+        }
+
+        State2 : cipher message
+     
+        block1 --> block2
+        block2 --> block3
+        block3 --> State2
+
+
+        
+```
