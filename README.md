@@ -1,14 +1,14 @@
 # git helper
 
 Content :
-<table border="0">
-	<tr><td>
-    		<ul>
-			<li><a href="#alias-in-git">ADDING GIT GLOBAL ITEMS</a></li>
-			<li><a href="#alias-in-git">Alias in git</a></li>
-    		</ul>
-  	</td></tr>
-</table>
+- <a href="#adding-git-global-items">ADDING GIT GLOBAL ITEMS</a>
+- <a href="#pushing-existing-folder-to-github-or-gitlab">PUSHING EXISTING FOLDER TO GITHUB OR GITLAB</a>
+- <a href="#pushing-existing-folder-to-github-or-gitlab">PUSHING EXISTING GIT REPO TO NEW GIT REPO</a>
+- <a href="#revert-back-modified-file">Revert back Modified File</a>
+- <a href="#if-you-have-added-git-add--from-terminal-by-mistake-and-want-them-to-move-them-back-to-uncommited-state">if you have added `git add .` from terminal by mistake and want them to move them back to uncommited state</a>
+- <a href="#usefull-gitignore-templates">USEFULL GITIGNORE TEMPLATES </a>
+- <a href="#remove-local-untracked-files-from-the-current-git-branch">REMOVE LOCAL UNTRACKED FILES FROM THE CURRENT GIT BRANCH</a>
+- <a href="#alias-in-git">Alias in git</a>
 
 ### ADDING GIT GLOBAL ITEMS
 ```
