@@ -215,8 +215,8 @@ Use: `git pd` or `git ui`
 
 
 
-
-
+<details>
+<summary><strong>Graphs</strong> examples </summary>
 
 ## Graph Examples 
 ```mermaid
@@ -317,3 +317,8 @@ Use: `git pd` or `git ui`
 
         
 ```
+---
+</details>
+
+
+
