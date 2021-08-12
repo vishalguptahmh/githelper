@@ -1,5 +1,15 @@
 # git helper
 
+Content :
+<table border="0">
+	<tr><td>
+    		<ul>
+			<li><a href="#alias-in-git">ADDING GIT GLOBAL ITEMS</a></li>
+			<li><a href="#alias-in-git">Alias in git</a></li>
+    		</ul>
+  	</td></tr>
+</table>
+
 ### ADDING GIT GLOBAL ITEMS
 ```
 git config --global user.name "Vishal Gupta"
