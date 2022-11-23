@@ -128,6 +128,17 @@ To remove directories, run `git clean -f -d` or `git clean -fd`
 To remove ignored files, run `git clean -f -X` or `git clean -fX`
 To remove ignored and non-ignored files, run `git clean -f -x` or `git clean -fx`
 
+### change  Author for the Very Last Commit
+```
+git commit --amend --author="John Doe <john@doe.org>"
+```
+
+### Pick any commit from commit id
+check your commit id for ex. asgsdfsdfsdfsd
+```
+git cherry-pick asgsdfsdfsdfsd
+
+```
 
 
 ### CREATE AND APPLY PATCH
