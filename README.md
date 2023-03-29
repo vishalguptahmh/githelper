@@ -342,4 +342,7 @@ Use: `git pd` or `git ui`
 </details>
 
 
+### GITK
+if in mac os , `gitk --all` is not working then use ` brew install git-gui`
+
 
