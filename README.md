@@ -10,6 +10,7 @@ Content :
 - <a href="#remove-local-untracked-files-from-the-current-git-branch">REMOVE LOCAL UNTRACKED FILES FROM THE CURRENT GIT BRANCH</a>
 - <a href="#alias-in-git">Alias in git</a>
 
+
 ### ADDING GIT GLOBAL ITEMS
 ```
 git config --global user.name "Vishal Gupta"
@@ -50,6 +51,12 @@ or
 
 git reset HEAD^ -- path/to/file
 
+```
+
+#### revert back single file to source
+
+```
+ git restore --source origin/dev <filename>
 ```
 ### ADD LONG MESSAGES IN COMMIT 
 it will open default editor to type
